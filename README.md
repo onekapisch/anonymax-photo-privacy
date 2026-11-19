@@ -117,7 +117,7 @@ AnonyMax finds most of what a stranger could read, and you see every finding bef
   </tr>
 </table>
 
-<p align="center"><img src="docs/screens/ipad-01-share-the-car-en.jpg" width="60%" alt="AnonyMax on iPad: hide faces, number plates and personal details in a photo before you share it."></p>
+<p align="center"><img src="docs/screens/ipad-01-share-the-car-en.jpg" width="38%" alt="AnonyMax on iPad: hide faces, number plates and personal details in a photo before you share it."></p>
 
 <p align="center"><sub>App Store screenshots of AnonyMax 1.0 (7) for Mac and 1.0 (15) for iPhone and iPad, made from the real app. Example content is invented: fictional plates, an invented chat and example addresses.</sub></p>
 
