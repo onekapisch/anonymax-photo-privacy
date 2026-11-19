@@ -1,0 +1,46 @@
+name: Report a problem
+description: Something in AnonyMax did not work as expected. Please leave out any personal details.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping. This page is public, so **please do not attach real photos**, screenshots with personal details, names, number plates, addresses or account data.
+        If a photo is needed to explain the problem, describe it in words, or write to support@onekapisch.com. Security issues go to support@onekapisch.com, never here.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Device
+      options: [Mac, iPhone, iPad]
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: App version and system version
+      description: "In AnonyMax, open Settings or About for the app version. Example: AnonyMax 1.0 (7) on a MacBook Air M2."
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a photo of ...
+        2. Choose ...
+        3. ...
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not attached real photos or screenshots, and I left out names, plates, addresses and account details.
+          required: true

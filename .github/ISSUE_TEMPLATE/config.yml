@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help and FAQ
+    url: https://anonymax.app/support/
+    about: Answers to common questions about AnonyMax.
+  - name: Website
+    url: https://anonymax.app/
+    about: See how AnonyMax works, Free and Pro, and the full story.
+  - name: Press kit
+    url: https://anonymax.app/press/
+    about: Facts, screenshots, the icon and the film for writing about AnonyMax.
+  - name: Security or private support
+    url: mailto:support@onekapisch.com
+    about: Write privately. Never post real photos, names, plates or addresses in a public issue.

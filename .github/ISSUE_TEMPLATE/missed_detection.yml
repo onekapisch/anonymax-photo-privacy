@@ -1,0 +1,56 @@
+name: It missed something
+description: AnonyMax did not find a face, a number plate or a piece of personal text. Describe it in words, never with a real photo.
+title: "[Missed]: "
+labels: [missed-detection]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This helps improve what AnonyMax finds. **Please never attach the photo**, and never type the real plate, name, address or number. This page is public.
+        Describe what was missed and the conditions instead. A made-up example in the same style (for example a plate you write yourself, like "AB 123") is welcome.
+        Until it is improved, you can always draw a cover by hand in Review before you save.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What was missed?
+      options:
+        - A face
+        - A child's face
+        - A number plate
+        - Personal text (name, address, email, phone, IBAN, card number, code)
+        - A QR code or barcode
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Device
+      options: [Mac, iPhone, iPad]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "Example: AnonyMax 1.0 (7) on Mac, or 1.0 (15) on iPhone."
+  - type: textarea
+    id: describe
+    attributes:
+      label: Describe it in words
+      description: Size in the picture, angle, lighting, distance, partly hidden or not. For plates, the country or format. For text, the font style and background.
+      placeholder: "A small plate at the far left, about 3 % of the photo width, at a steep angle, in shade. UK format, yellow rear plate."
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Type of picture
+      options: [Photo from a phone camera, Photo from a camera, Screenshot, Scan or photo of a document, Other]
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not attached the photo, and I did not type any real plate, name, address or number.
+          required: true
